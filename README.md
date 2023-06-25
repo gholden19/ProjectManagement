@@ -6,12 +6,12 @@
 
      
 /*
-README 
+# README 
 
-PARTICIPANT LANDING PAGE 
+## PARTICIPANT LANDING PAGE 
 https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
 
-Create a project:
+### Create a project:
 1. navigate to participant landing page
 	participant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
 2. type a unique name for the project into the text box next to the create project button
@@ -20,7 +20,7 @@ Create a project:
 
 
 
-Retrieve an existing project: 
+### Retrieve an existing project: 
 1. navigate to Participant Page link
 	participant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
 2. type the unique name of the project into the text box
@@ -34,7 +34,7 @@ Retrieve an existing project:
 5. retrieving the project will allow you to mark tasks as well
 
 
-Add a teammate: 
+### Add a teammate: 
 1. navigate to Pariticipant Landing Page
 	participant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
 2. type in the unique name of a project you would like to add a teammate
@@ -47,7 +47,7 @@ Add a teammate:
 7. if you click "get project" again it will update the display to show the new teammate listed
       in the project
 
-Remove a teammate: 
+### Remove a teammate: 
 1. navigate to Pariticipant Landing Page
 	particpant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
 2. type in the unique name of a project you would like to add a teammate
@@ -60,7 +60,7 @@ Remove a teammate:
    is no longer listed in the project
 
 
-Add a task: 
+### Add a task: 
 1. navigate to Participant Landing Page
 	participant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
 2. type in the unique id of a project in the text box below "Get Project" 
@@ -73,7 +73,7 @@ Add a task:
 8. the task(s) should now appear in the project displayed at the bottom of the page
 
 
-Rename a task: 
+### Rename a task: 
 1. navigate to the participant landing page
 	participant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
 2. type the unique name of the project into the text box
@@ -84,7 +84,7 @@ Rename a task:
 7. whe you refresh the page and get project again the task will be renamed
 
 
-Mark a task:
+### Mark a task:
 1. navigate to the participant landing page
 	paricipant page:  https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
 2. type in unique name of a project into the second text box from the top of the page
@@ -95,16 +95,16 @@ Mark a task:
 
 
 
-ADMINISTRATOR LANDING PAGE
+## ADMINISTRATOR LANDING PAGE
 https://3733speromeliora.s3.us-east-2.amazonaws.com/html/indexadminNEW.html?searchProjectName=check
 
-List projects:
+### List projects:
 1. navigate to the administrator page
 	administrator page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/indexadminNEW.html?searchProjectName=check
 2. click "Show projects" button to display a list of projects in the database
 
 
-Delete a project:
+### Delete a project:
 1. navigate to the Administrator Page 
 	administrator page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/indexadminNEW.html?searchProjectName=check
 2. type in the unique name for a project you want to delete and click "Search Project"
@@ -117,7 +117,7 @@ Delete a project:
 7. if you click "show projects" again the page should be refreshed
     to show a list of projects again, now without the deleted project
 
-Archive a project
+### Archive a project
 1. navigate to the Administrator Page 
 	administrator page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/indexadminNEW.html?searchProjectName=check
 2. type in the unique name for a project you want to delete and click "Search Project"
@@ -131,7 +131,7 @@ Archive a project
     to show a list of projects again, now isArchived set to true
 
 
-*dylan says to look at our bloop project
+
   
 */
     
