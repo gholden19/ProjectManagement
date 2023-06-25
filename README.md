@@ -1,8 +1,7 @@
-# ProjectManagement
+# ProjectManagementSystem README
 
 <html>
 
-# README 
 
 ## PARTICIPANT LANDING PAGE 
 https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
