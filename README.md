@@ -1,0 +1,335 @@
+# ProjectManagement
+
+<html>
+<head>
+<style>
+
+     
+/*
+README 
+
+PARTICIPANT LANDING PAGE 
+https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
+
+Create a project:
+1. navigate to participant landing page
+	participant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
+2. type a unique name for the project into the text box next to the create project button
+3. click the "create project" button
+4. the project will then be added to the database and can be found in search project or in the list of projects on the administrator page
+
+
+
+Retrieve an existing project: 
+1. navigate to Participant Page link
+	participant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
+2. type the unique name of the project into the text box
+ 		e.g. "grading"
+		- on the Administrator Page you can retrieve a 
+ 		comprehensive list of all projects in the db 
+3. click the "get project" button
+4. the project should be retrieved and displayed with it's 
+   group members, tasks, task identifiers, teammates, and 
+       isArchived status
+5. retrieving the project will allow you to mark tasks as well
+
+
+Add a teammate: 
+1. navigate to Pariticipant Landing Page
+	participant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
+2. type in the unique name of a project you would like to add a teammate
+    to into the text box below "Get Project"
+3. click on "Search Project"
+4. the project should be displayed before the block of text blocks in the
+   "Get Project" section
+5. now you can type a unique teammate name into the second text box below "Get Project" 
+6. click "Add Teammate"
+7. if you click "get project" again it will update the display to show the new teammate listed
+      in the project
+
+Remove a teammate: 
+1. navigate to Pariticipant Landing Page
+	particpant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
+2. type in the unique name of a project you would like to add a teammate
+   to into the text box below "Get Project"
+3. click on "Search Project"
+4. the project should be displayed at the bottom of the page
+5. now you can type a unique teammate name into the second text box below "Get Project" 
+6. click "Remove Teammate"
+7. if you click "get project" again it will update the display to show the teammate
+   is no longer listed in the project
+
+
+Add a task: 
+1. navigate to Participant Landing Page
+	participant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
+2. type in the unique id of a project in the text box below "Get Project" 
+3. click "Search Project"
+4. the project should be displayed at the bottom of the page
+5. type a task you would like to add in the task name text box 
+     - you can also add multiple tasks at once by seperating them with commas (e.g. task1,task2,task3)
+6. leave parent task identifier text box blank to add a top level task and click "add tasks"
+7. if you want to make it a subtask, type the parent task id in the box to the right of the task name
+8. the task(s) should now appear in the project displayed at the bottom of the page
+
+
+Rename a task: 
+1. navigate to the participant landing page
+	participant page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
+2. type the unique name of the project into the text box
+3. click the "search project" button
+4. type the task identifier into the box to the left of "rename to" label
+5. type the new name in the text box to the right of that
+6. click "rename task" 
+7. whe you refresh the page and get project again the task will be renamed
+
+
+Mark a task:
+1. navigate to the participant landing page
+	paricipant page:  https://3733speromeliora.s3.us-east-2.amazonaws.com/html/index.html
+2. type in unique name of a project into the second text box from the top of the page
+3. click the "search project" button
+4. type the task identifier you would like to mark as complete into the bottom text box 
+5. click "mark task"
+6. the task should now show up as complete when you search the project again
+
+
+
+ADMINISTRATOR LANDING PAGE
+https://3733speromeliora.s3.us-east-2.amazonaws.com/html/indexadminNEW.html?searchProjectName=check
+
+List projects:
+1. navigate to the administrator page
+	administrator page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/indexadminNEW.html?searchProjectName=check
+2. click "Show projects" button to display a list of projects in the database
+
+
+Delete a project:
+1. navigate to the Administrator Page 
+	administrator page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/indexadminNEW.html?searchProjectName=check
+2. type in the unique name for a project you want to delete and click "Search Project"
+3. if you do not know the unique name you can click the button to "Show projects"
+   and type the name of one of those in the search bar and click "Search Project"
+4. the project will appear on the left side ofo your screen with all of its information (tasks, task ids, teammates, and isArchived status)
+5. hover over the project until "delete project" and 
+   "archive project" buttons will appear
+6. click "Delete Project"
+7. if you click "show projects" again the page should be refreshed
+    to show a list of projects again, now without the deleted project
+
+Archive a project
+1. navigate to the Administrator Page 
+	administrator page: https://3733speromeliora.s3.us-east-2.amazonaws.com/html/indexadminNEW.html?searchProjectName=check
+2. type in the unique name for a project you want to delete and click "Search Project"
+3. if you do not know the unique name you can click the button to "Show projects"
+   and type the name of one of those in the search bar and click "Search Project"
+4. the project will appear on the left side ofo your screen with all of its information (tasks, task ids, teammates, and isArchived status)
+5. hover over the project until "delete project" and 
+   "archive project" buttons will appear
+6. click "Archive Project"
+7. if you click "show projects" again the page should be refreshed
+    to show a list of projects again, now isArchived set to true
+
+
+*dylan says to look at our bloop project
+  
+*/
+    
+    
+    
+
+body {
+    margin: 15;
+    padding: 0;
+    font: 12px/1.4em "Lucida Grande", Verdana, sans-serif;
+    color: #333;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    background-color: #F2F2F2;
+}
+
+h2 {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    padding: 0;
+    border-bottom: 3px solid #eee;
+
+    /* icon setup */
+    padding: 0.2em 1em 0.2em 30px;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+}
+
+
+/*************************************
+SECTIONS
+*************************************/
+div#content {
+    margin: 30px auto;
+    padding: 0 30px 15px 30px;
+    background-color: #fff;
+    width: 940px;
+
+    /* box-shadow */
+    -moz-box-shadow: 0 5px 10px #aaa;
+    -webkit-box-shadow: 0 5px 10px #aaa;
+    box-shadow: 0 5px 10px #aaa;
+
+    /* bottom corners */
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+/*div#content div.section {}*/
+
+div#content div.section ul {
+    margin: 0;
+    padding: 1em 0 0 2em;
+    overflow: hidden;
+}
+
+div#content div.section ul li {
+    list-style-type: square;
+    white-space: nowrap;
+    line-height: 1.5em;
+}
+
+/* Section titles */
+div#content div.section.s3 h2 {
+    background-image: url(../images/drive.png);
+}
+
+div#content div.section.ec2 h2 {
+    background-image: url(../images/server.png);
+}
+
+div#content div.section.sdb h2 {
+    background-image: url(../images/database.png);
+}
+
+
+/*************************************
+CONTAINERS
+*************************************/
+.container {
+    zoom: 1;
+}
+
+.container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+/*************************************
+GRIDS
+*************************************/
+.grid { float: left; margin-right: 20px; }
+.gridlast { margin-right: 0; }
+.grid5 { width: 300px; }
+.grid15 { width: 940px; }
+
+</style>
+</head>
+<div style="left: 32px; width: 975px; height: 753px;">
+<div style="padding-left: 37.5px; padding-right: 37.5px;">
+
+<div>
+
+<h1>Welcome to AWS Lambda Eclipse Plugin</h1>
+
+<p><strong>Congratulations</strong>! You have created your first AWS Lambda project. So what's next?</p>
+
+<hr>
+
+</div>
+
+<div>
+
+<h3>Step 1: Implement your function</h3>
+
+<p>Open up <strong>LambdaFunctionHandler.java</strong> and implement the <strong>handleRequest</strong> method. This method is the entry point for your Lambda function, and it will be invoked by Lambda in response to input from the event sources of your function.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> You can add new classes and additional external dependencies in your project if needed.</p>
+</blockquote>
+
+<hr>
+
+</div>
+
+<div>
+
+<h3>Step 2: Test your function</h3>
+
+<p>Open up <strong>LambdaFunctionHandlerTest.java</strong>. Fill in your test logic to validate the input and output of your function handler, and then run it locally as a normal JUnit test.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> The unit test provides a sample JSON input file if you have chosen a predefined event type as your function input. You can modify the JSON file, or create new ones based on it.</p>
+</blockquote>
+
+<hr>
+
+</div>
+
+<div>
+
+<h3>Step 3: Upload your function</h3>
+
+<p>
+Under Project or Package Explorer View, right-click on your project and select <strong>Amazon Web Services -&gt; Upload Function to AWS Lambda</strong>.
+Then follow the steps to create a new Lambda function or upload your code to an existing function.
+</p>
+</ul>
+
+<hr>
+
+</div>
+
+<div>
+
+<h3>Step 4: Invoke your function</h3>
+
+<p>Now we are ready to run the function in the cloud. Right-click on your project again and select <strong>Amazon Web Services -&gt; Run on AWS Lambda</strong>. <br>
+In the input dialog, enter the JSON input for your function, or select one of the JSON files in your project.</p>
+
+<blockquote>
+  <p><strong>Tip:</strong> You can add new JSON input files in your project, and they will show up in this dialog as long as the file name ends with ".json".</p>
+</blockquote>
+
+<p>Click <strong>Invoke</strong> and check the output of your function in the Eclipse Console View.</p>
+
+<hr>
+
+</div>
+
+<div>
+
+<h3>What's next?</h3>
+
+<p>If you want to know more about AWS Lambda, check out the following links:</p>
+
+<ul>
+<li><a href="http://aws.amazon.com/lambda/details/">AWS Lambda Product Details</a></li>
+<li><a href="http://docs.aws.amazon.com/lambda/latest/dg/welcome.html">AWS Lambda Developer Guide</a></li>
+</ul>
+
+<p><a href="mailto:aws-eclipse-feedback@amazon.com">Contact us</a> to send bug reports and feedbacks.</p>
+
+<p><strong><em>AWS SDK for Java team</em></strong></p>
+
+</div>
+
+</div>
+
+</div>
+</html>
