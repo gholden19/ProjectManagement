@@ -1,11 +1,7 @@
 # ProjectManagement
 
 <html>
-<head>
-<style>
 
-     
-/*
 # README 
 
 ## PARTICIPANT LANDING PAGE 
